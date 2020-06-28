@@ -19,7 +19,7 @@ namespace DungeonDice.Models.Dices
                     this.character = new Champion();
                     break;
                 case 2:
-                    this.character = new Cleric();
+                    this.character = new Bishop();
                     break;
                 case 3:
                     this.character = new Fighter();
