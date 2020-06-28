@@ -8,6 +8,7 @@ namespace DungeonDice.Models.Prizes
         {
             this.name = "Magic Talisman";
             this.character = new Cleric();
+            this.explanation = "Use as a Bishop";
         }
     }
 }

@@ -8,6 +8,7 @@ namespace DungeonDice.Models.Prizes
         {
             this.name = "Snake scepter";
             this.character = new Wizard();
+            this.explanation = "Use as a Wizard";
         }
     }
 }

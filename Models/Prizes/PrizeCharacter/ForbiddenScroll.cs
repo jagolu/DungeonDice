@@ -8,6 +8,7 @@ namespace DungeonDice.Models.Prizes
         {
             this.name = "Forbidden scroll";
             this.character = new QuestScroll();
+            this.explanation = "Use as a Quest scroll";
         }
     }
 }

@@ -7,6 +7,7 @@ namespace DungeonDice.Models.Prizes
         public EmeraldSword() : base()
         {
             this.name = "Emerald Sword";
+            this.explanation = "Use as a Fighter";
             this.character = new Fighter();
         }
     }

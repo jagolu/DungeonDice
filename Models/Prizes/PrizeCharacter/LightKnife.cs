@@ -8,6 +8,7 @@ namespace DungeonDice.Models.Prizes
         {
             this.name = "Light knife";
             this.character = new Rogue();
+            this.explanation = "Use as a Rogue";
         }
     }
 }

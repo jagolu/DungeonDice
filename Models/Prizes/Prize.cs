@@ -3,6 +3,7 @@
     abstract class Prize
     {
         public string name;
+        public string explanation;
 
         public abstract void use();
     }
