@@ -1,10 +1,10 @@
 ﻿namespace DungeonDice.Models.Characters
 {
-    class Cleric : GoodCharacter
+    class Bishop : GoodCharacter
     {
-        public Cleric() : base()
+        public Bishop() : base()
         {
-            this.name = "Cleric";
+            this.name = "Bishop";
             this.color = Color.GREY;
         }
     }
