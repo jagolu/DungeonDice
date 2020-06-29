@@ -15,4 +15,5 @@ namespace DungeonDice.Src.Prizes
             return _instance;
         }
     #endregion
+    }
 }
