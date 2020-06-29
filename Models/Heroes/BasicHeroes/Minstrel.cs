@@ -8,7 +8,7 @@ namespace DungeonDice.Models.Heroes
         {
             this.name = "Minstrel";
             this.speciality = "Rogues can be used as Wizards and Wizards can be used as Rogues";
-            this.hability = "Remove all the dragon dices";
+            this.hability = "Remove all the dragon dices in the dragon base";
             //TODO
             //this.evolvedHero = ...
         }
