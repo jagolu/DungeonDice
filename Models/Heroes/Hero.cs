@@ -6,10 +6,6 @@
         public string speciality;
         public string hability;
 
-        public abstract void useHability();
-
-        public abstract void useSpeciality();
-
         public abstract void executeHability();
 
         public abstract void executeSpeciality();

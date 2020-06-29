@@ -27,7 +27,7 @@ namespace DungeonDice.Models.Heroes
             Console.WriteLine("You have evolved!");
         }
 
-        public override void useHability()
+        public void useHability()
         {
             if (!this.hasUsedHisHability)
             {
@@ -44,7 +44,7 @@ namespace DungeonDice.Models.Heroes
             this.executeHability();
         }
 
-        public override void useSpeciality()
+        public void useSpeciality()
         {
             if (this.evolved)
             {
