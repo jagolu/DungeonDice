@@ -8,7 +8,7 @@ namespace DungeonDice.Src
 {
     class PrizesChest
     {
-        private List<Prize> prizes;
+        private readonly List<Prize> prizes;
 
         public PrizesChest()
         {
