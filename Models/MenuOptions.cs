@@ -2,10 +2,11 @@
 {
     enum MenuOptions
     {
-        FAIL = 0,
-        NEWGAME = 1,
-        LOADGAME = 2,
-        STATICS = 3,
-        QUIT = 4
+        FAIL = -1,
+        //10000X INITIAL MENU OPTIONS
+        NEWGAME = 100001,
+        LOADGAME = 100002,
+        STATICS = 100003,
+        QUIT = 100004,
     }
 }
