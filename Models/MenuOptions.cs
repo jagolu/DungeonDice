@@ -1,17 +1,17 @@
 ﻿namespace DungeonDice.Models
 {
     enum MenuOptions
-    {
+    { 
         FAIL = -1,
-        //10000X INITIAL MENU OPTIONS
-        NEWGAME = 100001,
-        LOADGAME = 100002,
-        STATICS = 100003,
-        QUIT = 100004,
+        //1001XX INITIAL MENU OPTIONS
+        NEWGAME = 100101,
+        LOADGAME = 100102,
+        STATICS = 100103,
+        QUIT = 100104,
 
-        //10001X HERO SELECTION MENU OPTIONS
-        RANDOM_HERO = 100011,
-        SELECT_HERO = 100012,
-        HERO_SELECTION_BACK = 100013
+        //1002XX HERO SELECTION MENU OPTIONS
+        RANDOM_HERO = 100201,
+        SELECT_HERO = 100202,
+        HERO_SELECTION_BACK = 100203
     }
 }
