@@ -9,8 +9,7 @@ namespace DungeonDice.Models.Heroes
             this.name = "Crusader";
             this.speciality = "Fighters can be used as Bishops and Bishops as Fighers";
             this.hability = "Crusader can be used as a Bishop or as a Figher";
-            //TODO
-            //this.evolvedHero = ...
+            this.evolvedHero = new Paladin();
         }
 
         public override void executeHability()

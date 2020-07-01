@@ -9,7 +9,7 @@ namespace DungeonDice.Models.Heroes
             this.name = "Mercenary";
             this.speciality = "When you form your team, you can re-roll any number of your team";
             this.hability = "Defeat any 2 monsters";
-            //this.evolvedHero = ...
+            this.evolvedHero = new Commander();
         }
 
         public override void executeHability()

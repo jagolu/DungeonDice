@@ -8,7 +8,7 @@ namespace DungeonDice.Models.Heroes
         {
             this.name = "Spellsword";
             this.speciality = "Fighters can be used as Wizards and Wizards as Fighers";
-            //this.evolvedHero = ...
+            this.evolvedHero = new Battlemage();
         }
 
         public override void executeHability()

@@ -9,8 +9,7 @@ namespace DungeonDice.Models.Heroes
             this.name = "Half-Goblin";
             this.speciality = "You can open chests and potions at any time during the monster phase";
             this.hability = "Transform 1 zombie into a Rogue. Discard it during the next Regroup phase";
-            //TODO
-            //this.evolvedHero = ...
+            this.evolvedHero = new Chieftain();
         }
 
         public override void executeHability()

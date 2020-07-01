@@ -9,8 +9,7 @@ namespace DungeonDice.Models.Heroes
             this.name = "Enchantress";
             this.speciality = "Quest scrolls can be used as any companion";
             this.hability = "Transform one monster into a potion";
-            //TODO
-            //this.evolvedHero = ...
+            this.evolvedHero = new Beguiler();
         }
 
         public override void executeHability()
