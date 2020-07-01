@@ -1,6 +1,7 @@
 ﻿using DungeonDice.Models.Prizes;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DungeonDice.Src.Prizes
 {
@@ -22,7 +23,7 @@ namespace DungeonDice.Src.Prizes
 
         private void addPrizes(int number, Prize prize, List<Prize> prizes)
         {
-            for (int i = 0; i < number; i++) prizes.Add(prize);
+            prizes.AddRange(Enumerable.Repeat(prize, number).ToList());
         }
 
         private List<Tuple<Prize, int>> getAvailablePrizes()
