@@ -37,7 +37,7 @@ namespace DungeonDice.Models.Heroes
 
             if (this.evolved)
             {
-                this.evolvedHero.useHability();
+                this.evolvedHero.executeHability();
                 return;
             }
 
