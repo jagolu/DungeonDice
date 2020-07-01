@@ -1,8 +1,6 @@
 ﻿using DungeonDice.Models;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 
 namespace DungeonDice.Src.Menus
 {

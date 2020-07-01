@@ -21,19 +21,27 @@ namespace DungeonDice.Src.Menus
 
         public override MenuOptions parseOption(int selectedOption)
         {
+            MenuOptions chosenOption;
             switch (selectedOption)
             {
                 case 1:
-                    return MenuOptions.NEWGAME;
+                    chosenOption = MenuOptions.NEWGAME;
+                    break;
                 case 2:
-                    return MenuOptions.LOADGAME;
+                    chosenOption = MenuOptions.LOADGAME;
+                    break;
                 case 3:
-                    return MenuOptions.STATICS;
+                    chosenOption = MenuOptions.STATICS;
+                    break;
                 case 4:
-                    return MenuOptions.QUIT;
+                    chosenOption = MenuOptions.QUIT;
+                    break;
+                default:
+                    chosenOption = MenuOptions.FAIL;
+                    break;
             }
 
-            return MenuOptions.FAIL;
+            return chosenOption;
         }
     }
 }
