@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace DungeonDice.Src
+namespace DungeonDice.Src.Menus
 {
     abstract class Menu
     {

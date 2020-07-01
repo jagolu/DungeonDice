@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DungeonDice.Src
+namespace DungeonDice.Src.Menus
 {
     class InitialMenu : Menu
     {
