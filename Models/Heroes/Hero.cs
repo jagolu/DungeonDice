@@ -9,5 +9,10 @@
         public abstract void executeHability();
 
         public abstract void executeSpeciality();
+
+        public string getHeroName()
+        {
+            return this.name;
+        }
     }
 }
