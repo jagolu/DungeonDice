@@ -10,7 +10,7 @@ namespace DungeonDice.Src
     {
         public List<int> options;
 
-        public Menu()
+        protected Menu()
         {
             this.options = new List<int>();
         }

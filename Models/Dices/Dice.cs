@@ -9,11 +9,11 @@ namespace DungeonDice.Models.Dices
         public Category category;
         public Character character;
 
-        public Dice() {
+        protected Dice() {
             this.actualValue = 0;
         }
 
-        public void rollDice()
+        protected void rollDice()
         {
             var rand = new Random();
             this.actualValue = rand.Next(1, 7);

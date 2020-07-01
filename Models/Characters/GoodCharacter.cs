@@ -2,7 +2,7 @@
 {
     abstract class GoodCharacter : Character
     {
-        public GoodCharacter()
+        protected GoodCharacter()
         {
             this.category = Category.GOOD;
         }

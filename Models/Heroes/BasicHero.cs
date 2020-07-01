@@ -9,7 +9,7 @@ namespace DungeonDice.Models.Heroes
         public bool evolved;
         public Hero evolvedHero;
 
-        public BasicHero() : base ()
+        protected BasicHero() : base ()
         {
             this.hasUsedHisHability = false;
             this.experience = 0;
