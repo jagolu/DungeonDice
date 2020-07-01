@@ -1,4 +1,6 @@
-﻿namespace DungeonDice.Models.Heroes
+﻿using System;
+
+namespace DungeonDice.Models.Heroes
 {
     abstract class Hero
     {
@@ -13,6 +15,13 @@
         public string getHeroName()
         {
             return this.name;
+        }
+
+        public void showInformation()
+        {
+            Console.WriteLine("Name: " + this.name);
+            Console.WriteLine("Speciality: " + this.speciality);
+            Console.WriteLine("Hability: " + this.hability);
         }
     }
 }

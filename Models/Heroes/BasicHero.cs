@@ -57,6 +57,14 @@ namespace DungeonDice.Models.Heroes
             this.executeSpeciality();
         }
 
+        public void showFullHeroInformation()
+        {
+            Console.WriteLine("\nBasic hero: ");
+            this.showInformation();
+            Console.WriteLine("\n\nEvolved hero: ");
+            this.evolvedHero.showInformation();
+        }
+
         public abstract override void executeHability();
         public abstract override void executeSpeciality();
     }
