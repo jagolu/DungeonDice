@@ -28,8 +28,14 @@ namespace DungeonDice.Src
             int option = -1;
             while (option == -1)
             {
-                while ((option = this.parseInt(Console.ReadLine())) == -1) ;
+                while ((option = this.parseInt(Console.ReadLine())) == -1)
+                {
+                    //This has to be an empty loop because I only check if
+                    //the data introduced by the user is correct or not
+                }
+
                 option = this.options.Any(p => p == option) ? option : -1;
+
                 if (!this.options.Any(p => p==option))
                 {
                     Console.WriteLine("Option Incorrecta\n");
