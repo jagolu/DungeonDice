@@ -8,11 +8,11 @@ namespace DungeonDice.Src.Menus
 {
     abstract class Menu
     {
-        public List<int> options;
+        public int maxOption;
 
         protected Menu()
         {
-            this.options = new List<int>();
+            this.maxOption = 0;
         }
 
         public MenuOptions Run()
@@ -34,9 +34,7 @@ namespace DungeonDice.Src.Menus
                     //the data introduced by the user is correct or not
                 }
 
-                option = this.options.Any(p => p == option) ? option : -1;
-
-                if (!this.options.Any(p => p==option))
+                if (!this.validOption(option))
                 {
                     Console.WriteLine("Option Incorrecta\n");
                     this.showOptions();
@@ -56,7 +54,6 @@ namespace DungeonDice.Src.Menus
             catch (Exception)
             {
                 Console.WriteLine("Numero no valido\n");
-                this.showOptions();
             }
 
             return -1;
@@ -65,5 +62,10 @@ namespace DungeonDice.Src.Menus
         public abstract void showOptions();
 
         public abstract MenuOptions parseOption(int selectedOption);
+
+        private bool validOption(int option)
+        {
+            return 0 < option && option < this.maxOption;
+        }
     }
 }

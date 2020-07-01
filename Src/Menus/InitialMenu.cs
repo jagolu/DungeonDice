@@ -1,6 +1,5 @@
 ﻿using DungeonDice.Models;
 using System;
-using System.Collections.Generic;
 
 namespace DungeonDice.Src.Menus
 {
@@ -8,7 +7,7 @@ namespace DungeonDice.Src.Menus
     {
         public InitialMenu() : base ()
         {
-            this.options = new List<int>() { 1, 2, 3, 4 };
+            this.maxOption = 4;
         }
 
         public override void showOptions()
