@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DungeonDice.Models.Heroes.EvolvedHeroes;
+using System;
 
 namespace DungeonDice.Models.Heroes
 {
@@ -14,6 +15,7 @@ namespace DungeonDice.Models.Heroes
             this.hasUsedHisHability = false;
             this.experience = 0;
             evolved = false;
+            this.evolvedHero = new DefaultEvolvedHero();
         }
 
         public void evolve()
