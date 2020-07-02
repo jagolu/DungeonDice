@@ -6,6 +6,7 @@ namespace DungeonDice.Src.Manager
     class MainMenuManager
     {
         private readonly InitialMenuManager imm;
+            this.imm = InitialMenuManager.getInstance();
 
 
         public MainMenuManager()

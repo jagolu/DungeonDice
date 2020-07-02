@@ -6,24 +6,35 @@ namespace DungeonDice.Src.Manager.SubMenuManagers
 {
     class InitialMenuManager
     {
-        #region vars
-
-        private readonly InitialMenu initialMenu;
-        private readonly HeroSelection heroSelectionMenu;
-        private readonly SpecificHeroSelection specificHeroSelectionMenu;
-        private readonly ConfirmSpecificHeroSelectionMenu confirmSpecificHeroSelectionMenu;
-
-        #endregion
-
-        #region constructor
-
-        public InitialMenuManager()
+        #region singleton
+        private InitialMenuManager()
         {
             this.initialMenu = new InitialMenu();
             this.heroSelectionMenu = new HeroSelection();
             this.specificHeroSelectionMenu = new SpecificHeroSelection();
             this.confirmSpecificHeroSelectionMenu = new ConfirmSpecificHeroSelectionMenu();
         }
+
+        private static InitialMenuManager _instance;
+
+        public static InitialMenuManager getInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new InitialMenuManager();
+            }
+
+            return _instance;
+        }
+
+        #endregion
+
+        #region vars
+
+        private readonly InitialMenu initialMenu;
+        private readonly HeroSelection heroSelectionMenu;
+        private readonly SpecificHeroSelection specificHeroSelectionMenu;
+        private readonly ConfirmSpecificHeroSelectionMenu confirmSpecificHeroSelectionMenu;
 
         #endregion
 
