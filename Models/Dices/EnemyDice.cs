@@ -1,5 +1,6 @@
 ﻿using DungeonDice.Models.Characters;
 using DungeonDice.Models.Characters.BadCharacters;
+using DungeonDice.Src.Util;
 
 namespace DungeonDice.Models.Dices
 {
@@ -38,6 +39,11 @@ namespace DungeonDice.Models.Dices
                     this.character = new DefaultEnemy();
                     break;
             }
+        }
+
+        public bool isDragon()
+        {
+            return CheckBadCharacterType.isDragon(this.character);
         }
     }
 }
