@@ -5,14 +5,26 @@ namespace DungeonDice.Src.Manager
 {
     class MainMenuManager
     {
-        private readonly InitialMenuManager imm;
-            this.imm = InitialMenuManager.getInstance();
-
-
-        public MainMenuManager()
+        #region singleton
+        private MainMenuManager()
         {
-            this.imm = new InitialMenuManager();
+            this.imm = InitialMenuManager.getInstance();
         }
+
+        private static MainMenuManager _instance;
+
+        public static MainMenuManager getInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new MainMenuManager();
+            }
+            return _instance;
+        }
+
+        #endregion
+
+        private readonly InitialMenuManager imm;
 
         public MenuOptions RunInitialMenu()
         {
