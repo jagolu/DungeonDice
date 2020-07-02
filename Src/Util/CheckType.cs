@@ -9,5 +9,10 @@ namespace DungeonDice.Src.Util
         {
             return p1.GetType() == p2.GetType();
         }
+
+        public static bool isEqualTypeCharacter(Character bc1, Character bc2)
+        {
+            return bc1.GetType() == bc2.GetType();
+        }
     }
 }
