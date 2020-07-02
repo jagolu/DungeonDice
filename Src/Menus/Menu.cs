@@ -1,4 +1,5 @@
 ﻿using DungeonDice.Models;
+using DungeonDice.Src.Writer;
 using System;
 using System.Globalization;
 
@@ -15,9 +16,11 @@ namespace DungeonDice.Src.Menus
 
         public MenuOptions Run()
         {
-            this.showOptions();
+            this.startShowingMenu();
+
             int selectedOption = this.checkOptions();
 
+            this.finishingShowingMenu();
             return this.parseOption(selectedOption);
         }
 
@@ -64,6 +67,21 @@ namespace DungeonDice.Src.Menus
         private bool validOption(int option)
         {
             return 0 < option && option <= this.maxOption;
+        }
+
+        private void startShowingMenu()
+        {
+            WriterAssistant.setMenuColor();
+            WriterAssistant.writeLine(1);
+            this.showOptions();
+            WriterAssistant.setDefaultColor();
+        }
+
+        private void finishingShowingMenu()
+        {
+            WriterAssistant.setMenuColor();
+            WriterAssistant.writeLine(2);
+            WriterAssistant.setDefaultColor();
         }
     }
 }
