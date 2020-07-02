@@ -63,7 +63,7 @@ namespace DungeonDice.Src.Menus
 
         private bool validOption(int option)
         {
-            return 0 < option && option < this.maxOption;
+            return 0 < option && option <= this.maxOption;
         }
     }
 }
