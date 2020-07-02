@@ -1,5 +1,6 @@
 ﻿using DungeonDice.Models;
 using DungeonDice.Models.Heroes;
+using DungeonDice.Models.Heroes.BasicHeroes;
 using System;
 
 namespace DungeonDice.Src.Menus
@@ -8,41 +9,15 @@ namespace DungeonDice.Src.Menus
     {
         private BasicHero heroToShow;
 
-        public ConfirmSpecificHeroSelectionMenu(MenuOptions beforeMenuOption) : base()
+        public ConfirmSpecificHeroSelectionMenu() : base()
         {
             this.maxOption = 2;
-            this.getHero(beforeMenuOption);
+            this.heroToShow = new DefaultBasicHero();
         }
 
-        public override void showOptions()
+        public void setOptionChosen(MenuOptions optionChosen)
         {
-            this.heroToShow.showFullHeroInformation();
-            Console.WriteLine("\n1) Confirm selection");
-            Console.WriteLine("2) Back");
-        }
-
-        public override MenuOptions parseOption(int selectedOption)
-        {
-            MenuOptions chosenOption;
-            switch (selectedOption)
-            {
-                case 1:
-                    chosenOption = MenuOptions.CONFIRM_SPECIFIC_HERO_SELECTION;
-                    break;
-                case 2:
-                    chosenOption = MenuOptions.CONFIRM_SPECIFIC_HERO_SELECTION_BACK;
-                    break;
-                default:
-                    chosenOption = MenuOptions.FAIL;
-                    break;
-            }
-
-            return chosenOption;
-        }
-
-        private void getHero(MenuOptions option)
-        {
-            switch (option)
+            switch (optionChosen)
             {
                 case MenuOptions.SELECT_CRUSADER:
                     this.heroToShow = new Crusader();
@@ -69,6 +44,32 @@ namespace DungeonDice.Src.Menus
                     this.heroToShow = new Spellsword();
                     break;
             }
+        }
+
+        public override void showOptions()
+        {
+            this.heroToShow.showFullHeroInformation();
+            Console.WriteLine("\n1) Confirm selection");
+            Console.WriteLine("2) Back");
+        }
+
+        public override MenuOptions parseOption(int selectedOption)
+        {
+            MenuOptions chosenOption;
+            switch (selectedOption)
+            {
+                case 1:
+                    chosenOption = MenuOptions.CONFIRM_SPECIFIC_HERO_SELECTION;
+                    break;
+                case 2:
+                    chosenOption = MenuOptions.CONFIRM_SPECIFIC_HERO_SELECTION_BACK;
+                    break;
+                default:
+                    chosenOption = MenuOptions.FAIL;
+                    break;
+            }
+
+            return chosenOption;
         }
     }
 }
