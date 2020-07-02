@@ -6,57 +6,52 @@ namespace DungeonDice.Src.Util
     {
         public static bool isArcaneProtal(Prize p)
         {
-            return isEqualType(p, new ArcanePortal());
+            return CheckType.isEqualTypePrize(p, new ArcanePortal());
         }
 
         public static bool isDragonEgg(Prize p)
         {
-            return isEqualType(p, new DragonEgg());
+            return CheckType.isEqualTypePrize(p, new DragonEgg());
         }
 
         public static bool isMagicFlute(Prize p)
         {
-            return isEqualType(p, new MagicFlute());
+            return CheckType.isEqualTypePrize(p, new MagicFlute());
         }
 
         public static bool isMagicRing(Prize p)
         {
-            return isEqualType(p, new MagicRing());
+            return CheckType.isEqualTypePrize(p, new MagicRing());
         }
 
         public static bool isManaPotion(Prize p)
         {
-            return isEqualType(p, new ManaPotion());
+            return CheckType.isEqualTypePrize(p, new ManaPotion());
         }
 
         public static bool isEmeraldSword(Prize p)
         {
-            return isEqualType(p, new EmeraldSword());
+            return CheckType.isEqualTypePrize(p, new EmeraldSword());
         }
 
         public static bool isForbiddenScroll(Prize p)
         {
-            return isEqualType(p, new ForbiddenScroll());
+            return CheckType.isEqualTypePrize(p, new ForbiddenScroll());
         }
 
         public static bool isLightKnife(Prize p)
         {
-            return isEqualType(p, new LightKnife());
+            return CheckType.isEqualTypePrize(p, new LightKnife());
         }
 
         public static bool isMagicTalisman(Prize p)
         {
-            return isEqualType(p, new MagicTalisman());
+            return CheckType.isEqualTypePrize(p, new MagicTalisman());
         }
 
         public static bool isSnakeScepter(Prize p)
         {
-            return isEqualType(p, new SnakeScepter());
-        }
-
-        private static bool isEqualType(Prize p1, Prize p2)
-        {
-            return p1.GetType() == p2.GetType();
+            return CheckType.isEqualTypePrize(p, new SnakeScepter());
         }
     }
 }
