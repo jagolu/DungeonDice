@@ -8,6 +8,7 @@
         GREY = 4,
         RED = 5,
         BLUE = 6,
-        YELLOW = 7
+        YELLOW = 7,
+        WHITE = 8
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DungeonDice.Models.Characters;
+using DungeonDice.Models.Characters.BadCharacters;
 
 namespace DungeonDice.Models.Dices
 {
@@ -32,6 +33,9 @@ namespace DungeonDice.Models.Dices
                     break;
                 case 6:
                     this.character = new SwampCreature();
+                    break;
+                default:
+                    this.character = new DefaultEnemy();
                     break;
             }
         }
