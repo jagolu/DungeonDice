@@ -2,9 +2,9 @@
 
 namespace DungeonDice.Models.Dices
 {
-    class DungeonDice : Dice
+    class EnemyDice : Dice
     {
-        public DungeonDice (): base()
+        public EnemyDice (): base()
         {
             this.category = Category.BAD;
         }
