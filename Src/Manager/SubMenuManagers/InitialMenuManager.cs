@@ -2,7 +2,7 @@
 using DungeonDice.Src.Menus;
 using System;
 
-namespace DungeonDice.Src.Manager
+namespace DungeonDice.Src.Manager.SubMenuManagers
 {
     class InitialMenuManager
     {

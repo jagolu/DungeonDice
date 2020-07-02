@@ -1,4 +1,5 @@
 ﻿using DungeonDice.Models;
+using DungeonDice.Src.Manager.SubMenuManagers;
 
 namespace DungeonDice.Src.Manager
 {
